@@ -44,7 +44,7 @@
     <menu ref="modules" inherit="top"/>
 
     <links>
-    	<item name="MyERP" href="http://www.dummy.com/apperp"/>
+    	<item name="AppMyERP" href="http://www.dummy.com/apperp"/>
     </links>
 
     <footer>All rights reserved to ${project.organization.name}</footer>

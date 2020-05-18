@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
 
     <!-- ===== General information ===== -->
-    <name>MyERP</name>
+    <name>AppMyERP</name>
     <description>
         ERP sur-mesure pour Dummy...
     </description>
@@ -48,7 +48,7 @@
         <buildTime>${maven.build.timestamp}</buildTime>
 
         <!-- ===== Application properties ===== -->
-        <application.name>MyERP</application.name>
+        <application.name>AppMyERP</application.name>
 
         <!-- ===== Version properties ===== -->
         <log4j.version>2.8.1</log4j.version>
@@ -375,6 +375,37 @@
                     <artifactId>build-helper-maven-plugin</artifactId>
                     <version>1.10</version>
                 </plugin>
+
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.8.4</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>prepare-agent</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>report</id>
+                            <phase>prepare-package</phase>
+                            <goals>
+                                <goal>report</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>jacoco-check</id>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                            <configuration>
+                                <rules>
+                                </rules>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
             </plugins>
         </pluginManagement>
     </build>
