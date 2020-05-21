@@ -1,6 +1,6 @@
 version: '2'
 services:
-  apperp.db:
+  myerp.db:
     image: postgres:9.4
     ports:
       - "127.0.0.1:9032:5432"

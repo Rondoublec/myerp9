@@ -7,8 +7,8 @@
     <!-- Project informations -->
     <!-- =============================================================== -->
     <!-- ===== Maven ===== -->
-    <groupId>com.dummy.apperp</groupId>
-    <artifactId>apperp</artifactId>
+    <groupId>com.dummy.myerp</groupId>
+    <artifactId>myerp</artifactId>
     <version>1.x.x-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -17,7 +17,7 @@
     <description>
         ERP sur-mesure pour Dummy...
     </description>
-    <url>http://www.dummy.com/projects/apperp</url>
+    <url>http://www.dummy.com/projects/myerp</url>
 
     <!-- ===== Organization ===== -->
     <organization>
@@ -60,10 +60,10 @@
     <!-- Modules -->
     <!-- =============================================================== -->
     <modules>
-        <module>apperp-technical</module>
-        <module>apperp-model</module>
-        <module>apperp-consumer</module>
-        <module>apperp-business</module>
+        <module>myerp-technical</module>
+        <module>myerp-model</module>
+        <module>myerp-consumer</module>
+        <module>myerp-business</module>
     </modules>
 
 
@@ -120,22 +120,22 @@
             <!-- ========== Modules ========== -->
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>apperp-technical</artifactId>
+                <artifactId>myerp-technical</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>apperp-model</artifactId>
+                <artifactId>myerp-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>apperp-consumer</artifactId>
+                <artifactId>myerp-consumer</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>apperp-business</artifactId>
+                <artifactId>myerp-business</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -493,7 +493,7 @@
                     <groups>
                         <group>
                             <title>Application</title>
-                            <packages>com.dummy.apperp*</packages>
+                            <packages>com.dummy.myerp*</packages>
                         </group>
                     </groups>
                 </configuration>
